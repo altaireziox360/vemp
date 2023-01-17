@@ -1,0 +1,22 @@
+exit status 0xc000013a
+exit status 0xc000013a
+ERROR	2022/12/28 14:22:48 handlers.go:24: open ./ui/html/pages/home.html: The system cannot find the file specified.
+goroutine 7 [running]:
+runtime/debug.Stack()
+	C:/Program Files/Go/src/runtime/debug/stack.go:24 +0x65
+main.(*application).serverError(0xc00004ece0, {0x52f4a0, 0xc0001a4000}, {0x52d1e0?, 0xc0001824e0?})
+	C:/Users/AIR/workspace/go/playground/snippetbox/cmd/web/helpers.go:10 +0x66
+main.(*application).home(0x30000?, {0x52f4a0?, 0xc0001a4000}, 0x212f90?)
+	C:/Users/AIR/workspace/go/playground/snippetbox/cmd/web/handlers.go:24 +0x198
+net/http.HandlerFunc.ServeHTTP(0xc000067af0?, {0x52f4a0?, 0xc0001a4000?}, 0x0?)
+	C:/Program Files/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x52f4a0, 0xc0001a4000}, 0xc000190000)
+	C:/Program Files/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000182030?}, {0x52f4a0, 0xc0001a4000}, 0xc000190000)
+	C:/Program Files/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000001040, {0x52f940, 0xc00007d470})
+	C:/Program Files/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3102 +0x4db
+exit status 0xc000013a
+exit status 0xc000013a
