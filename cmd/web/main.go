@@ -28,7 +28,7 @@ type application struct {
 
 func main() {
 	// parse command-line flags
-	addr := flag.String("addr", "localhost:8000", "HTTP network address")
+	addr := flag.String("addr", ":8000", "HTTP network address")
 	dsn := flag.String("dsn", "postgres://postgres:yeager063x@localhost/snippetbox?sslmode=disable", "dsn for postgres db")
 	flag.Parse()
 
